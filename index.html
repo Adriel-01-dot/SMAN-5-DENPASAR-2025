@@ -14,6 +14,12 @@
 
     <!-- my style -->
     <link rel="stylesheet" href="css/style.css">
+
+  <!-- AlpineJS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- app -->
+    <script src="src/app.js" async></script>
 </head>
 
 <body>
@@ -68,8 +74,8 @@
             </div>
             <div class="content">
                 <h3>Mengenai SMA Negeri 5 DENPASAR</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam quas magni similique nesciunt nostrum ut.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus inventore tenetur maxime rerum, numquam modi.</p>
+                <p>SMA Negeri 5 Denpasar merupakan sekolah yang mejunjung tinggi nilai-nilai pancasila.Sekolah yang beralamat di Jalan Sanitasi No.2 ini juga memiliki program yang tidak kalah saing dengan sekolah lain.</p>
+                <p>Selain itu, SMA Negeri 5 Denpasar juga meliki fasilitas yang dapat menunjang kreativitas,minat, dan bakat siswa-siswanya.</p>
             </div>
         </div>
     </section>
@@ -87,17 +93,17 @@
         <p></p>
     </div>
     <div class="menu-card">
-        <img src="img/aula.jpeg" alt="Aula SMAN 5 DENPASAR" class="menu-card-img">
+        <img src="img/lapbas-smanela-3.png" alt="Aula SMAN 5 DENPASAR" class="menu-card-img">
         <h3 class="menu-card-title">- Lapangan Basket -</h3>
         <p></p>
     </div>
     <div class="menu-card">
-        <img src="img/aula.jpeg" alt="Aula SMAN 5 DENPASAR" class="menu-card-img">
+        <img src="img/labkom-smanela-2.jpeg" alt="Aula SMAN 5 DENPASAR" class="menu-card-img">
         <h3 class="menu-card-title">- Ruang Komputer -</h3>
         <p></p>
     </div>
     <div class="menu-card">
-        <img src="img/aula.jpeg" alt="Aula SMAN 5 DENPASAR" class="menu-card-img">
+        <img src="img/perpus-smanela-2.jpeg" alt="Aula SMAN 5 DENPASAR" class="menu-card-img">
         <h3 class="menu-card-title">- Perpustakaan -</h3>
         <p></p>
     </div>
@@ -122,24 +128,25 @@
         <h2><span>Daftar</span> Sekarang</h2>
         <p>Jika anda tertarik bergabung bersama kami silahkan mengisi data di bawah ini</p>
 
-        <div class="row">
-        <form action="">
-            <div class="input-group">
-                <i data-feather="user"></i>
-                <input type="text" placeholder="Nama">
-            </div>
-            <div class="input-group">
-                <i data-feather="mail"></i>
-                <input type="text" placeholder="Email">
-            </div>
-            <div class="input-group">
-                <i data-feather="phone"></i>
-                <input type="text" placeholder="No Whatsapp">
-            </div>
-            <button type="submit" class="btn">Submit</button>
+       <div class="form-container">
+        <form action="" id="checkoutForm">
+            
+            <label for="name">
+                <span>Nama</span>
+                <input type="text" name="name" id="name">
+            </label>
+            <label for="email">
+                <span>Email</span>
+                <input type="email" name="email" id="email">
+            </label>
+            <label for="phone">
+                <span>Phone</span>
+                <input type="number" name="phone" id="phone">
+            </label>
+
         </form>
+        <button class="checkout-button disabled" type="submit" id="checkout-button" value="checkout">Submit</button>
     </div>
-     </section>
     <!-- register section end -->
 
      <!-- rating section start -->

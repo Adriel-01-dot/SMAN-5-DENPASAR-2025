@@ -20,7 +20,7 @@ body {
   font-family: "poppins", sans-serif;
   background-color: var(--bg);
   color: #fff;
-  min-height: 5000px;
+  min-height: 2500px;
 }
 
 /* navbar */
@@ -50,7 +50,7 @@ body {
 }
 
 .navbar .navbar-nav a {
-  color: #fff;
+  color: #011627;
   display: inline-block;
   font-size: 1.4rem;
   margin: 0 1rem;
@@ -351,37 +351,65 @@ body {
 }
 
 /* register section */
-.register .row {
+
+.form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-top: 1px dashed black;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.form-container form {
+  width: 100%;
+  text-align: center;
+}
+
+.form-container label {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 1rem;
+}
+
+.form-container input {
+  background-color: wheat;
+  padding: 5px;
+  font-size: 1rem;
+  width: 70%;
+}
+
+.form-container .checkout-button {
+  padding: 6px 14px;
+  background-color: royalblue;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 20px;
+  margin: 1rem auto;
+  cursor: pointer;
+}
+
+.form-container .checkout-button.disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.register .form-container {
   display: flex;
   margin-top: 2rem;
   background-color: #aaaaaa;
   flex-wrap: wrap;
 }
 
-.register .row form {
+.register .form-container form {
   flex: 1 1 45rem;
   padding: 5rem 2rem;
   text-align: center;
 }
 
-.register .row form .input-group {
-  display: flex;
-  align-items: center;
-  margin-top: 1rem;
-  background-color: var(--bg);
-  border: 1px solid #eee;
-  padding-left: 1rem;
-}
-
-.register .row form .input-group input {
-  width: 100%;
-  padding: 2rem;
-  font-size: 1.7rem;
-  background: none;
-  color: #fff;
-}
-
-.register .row form .btn {
+.register .form-container form .checkout-button {
   margin-top: 3rem;
   display: inline-block;
   padding: 1rem 3rem;
@@ -390,12 +418,11 @@ body {
   background-color: var(--primary);
   cursor: pointer;
 }
-
 /* footer */
 footer {
   background-color: #011627;
   text-align: center;
-  padding: 2rem 0 3rem;
+  padding: 3rem 0 3rem;
   margin-top: 3rem;
 }
 
